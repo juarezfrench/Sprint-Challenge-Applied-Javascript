@@ -24,6 +24,8 @@ insertCards = document.querySelector(".cards-container");
 axios
   .get(`https://lambda-times-backend.herokuapp.com/articles`)
   .then(data => {
+    // const articleData = Object.entries(data.data.articles);
+    // const categories = Object.keys(data.data.articles);
     const articleData = Object.entries(data.data.articles);
     const categories = Object.keys(data.data.articles);
 
